@@ -29,6 +29,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+/* -------------------------header------------------------- */
 .page-header {
   display: flex;
   align-items: center;
@@ -58,6 +59,44 @@ img {
 }
 .nav-list a:hover {
   color: #f07f2e;
+}
+/* ----------------------hero------------------------------ */
+.hero {
+  padding: 52px 28px;
+  display: flex;
+  align-items: flex-end;
+  /* position: relative; */
+  /* width: 944px; */
+  height: 480px;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+.hero-title {
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.greeting {
+  /* position: absolute;
+  left: 28px;
+  bottom: 52px; */
+  padding: 24px;
+  width: 432px;
+  /* height: 192px; */
+  background-color: #0f3f3c;
+  border-radius: 16px;
 }
 /* ------------------Section cats------------------- */
 .section {
@@ -90,6 +129,38 @@ img {
 .cats-list h3 {
   margin-bottom: 8px;
 }
+/* -----------------------------Family cats-------------------------------- */
+.cats-family {
+}
+.container {
+}
+.cats-family-title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #2c2c2c;
+}
+.cats-family-text {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #2c2c2c;
+}
+.cats-family-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cats-family-list li {
+  /* width: 144px; */
+  flex-basis: calc((100% - 5 * 16px) / 6);
+  overflow: hidden;
+  border-radius: 16px;
+}
+.cats-family-list li:hover {
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+}
 /* ------------------------Footer---------------- */
 .page-footer {
   padding-top: 48px;
@@ -101,7 +172,46 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.social-links svg {
+.footer-text {
+  margin-top: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.social-text {
+  margin-bottom: 16px;
+  text-align: right;
+  line-height: 1.5px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.social-list {
+  display: flex;
+  gap: 8px;
+}
+/* .social-item + .social-item {
+  margin-left: 32px;
+} */
+
+.social-list svg {
   width: 16px;
   height: 16px;
+  fill: #ffffff;
+}
+.social-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.social-list a:hover {
+  background-color: #ffffff;
+}
+
+/* закрасить свг которая находиться в сошиал линкс когда ссылка ховериться */
+
+.social-list a:hover svg {
+  fill: #f07f2e;
 }
